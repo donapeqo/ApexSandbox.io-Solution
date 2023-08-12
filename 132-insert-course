@@ -6,7 +6,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     course.apxio__Course_Details__c = details;
     course.apxio__Credits__c = String.valueOf(credits);
 
-    if(course.apxio__Credits__c < 5){
+    if(credits < 5){
         insert course;
         return course.id;
     } else {
