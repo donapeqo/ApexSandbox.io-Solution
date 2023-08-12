@@ -1,0 +1,16 @@
+public Id insertStudent(String name, String email) {
+    // code here
+    apxio__student__c student = new apxio__student__c();
+
+    student.Name = name;
+    student.apxio__Email__c = email;
+
+    try{
+        insert student;
+    }catch(DmlException e) {
+    System.debug('An unexpected error has occurred: ' + e.getMessage());
+    }
+
+    return student.id;
+
+}
