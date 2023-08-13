@@ -8,7 +8,7 @@ public String registerStudent(String name, String phone, String email) {
 
     insert std;
 
-    List<apxio__Student__c> astd = [SELECT Id,apxio__Registration_Number__c  FROM apxio__Student__c WHERE id = std.Id];
+    List<apxio__Student__c>apxio__Student__c astd = [SELECT Id,apxio__Registration_Number__c  FROM apxio__Student__c WHERE id = std.Id];
     
     return astd[0].apxio__Registration_Number__c;
 }
