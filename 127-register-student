@@ -10,6 +10,6 @@ public String registerStudent(String name, String phone, String email) {
 
     List<apxio__Student__c> insertedStudent = [Select id,apxio__Registration_Number__c from apxio__Student__c where Id = :student.Id ];
 
-    return insertedStudent.apxio__Registration_Number__c;
+    return insertedStudent[0].apxio__Registration_Number__c;
 
 }
