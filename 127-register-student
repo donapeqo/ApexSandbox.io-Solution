@@ -8,6 +8,6 @@ public String registerStudent(String name, String phone, String email) {
 
     insert student;
 
-    
+    return student.name;
 
 }
