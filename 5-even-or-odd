@@ -8,5 +8,5 @@ public String evenOrOdd(Integer num) {
     //     return 'odd';
     // }
 
-    return Math.Mod(num,2) ? 'even' : 'odd';
+    return Math.Mod(num,2) == 0 ? 'even' : 'odd';
 }
