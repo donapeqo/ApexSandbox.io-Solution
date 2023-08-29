@@ -1,10 +1,12 @@
 public String evenOrOdd(Integer num) {
     //code here
-    Integer num1 = Math.mod(num,2);
+    // Integer num1 = ;
 
-    if(num1 == 0 ){
-        return 'even';
-    } else{
-        return 'odd';
-    }
+    // if(Math.mod(num,2) == 0 ){
+    //     return 'even';
+    // } else{
+    //     return 'odd';
+    // }
+
+    return Math.Mod(num,2) ? 'even' : 'odd';
 }
