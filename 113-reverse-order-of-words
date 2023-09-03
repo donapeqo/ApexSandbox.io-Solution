@@ -1,18 +1,23 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
 
-    //Split the words by the spaces
+    //handles null arguments
     if(sentence == null) return null;
+
+    //Split the words by the spaces
     list<String> splitSentences = sentence.split(' ');
 
+    //instantiate the max count of words
     Integer n = splitSentences.size();
 
+    //instantiate a new string to hold reversed value
     String reversedSentence = '';
 
+    //loop through the list and concatnate with a space
     for(Integer i = n-1; i>= 0; i--){
         reversedSentence += splitSentences.get(i)+' ';
     }
-
+    // trim the extra spaces
     return reversedSentence.trim();
 
 }
