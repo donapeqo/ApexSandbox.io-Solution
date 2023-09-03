@@ -13,6 +13,6 @@ public String reverseWordsInASentence(String sentence){
         reversedSentence += splitSentences.get(i)+' ';
     }
 
-    return reversedSentence;
+    return reversedSentence.trim();
 
 }
