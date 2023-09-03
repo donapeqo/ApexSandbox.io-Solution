@@ -1,4 +1,15 @@
 public Boolean companionPlants(String plant1, String plant2) {
-    //code here
-    return plant1 == 'lettuce' && (plant2 == 'cucumber' )
-}
+     Map<String, Set<String>> companionPlants  = new Map<String, Set<String>>();
+
+        companionPlants.put('lettuce', new Set<String>{'cucumbers', 'onions'});
+
+        companionPlants.put('cucumbers', new Set<String>{'lettuce'});
+
+        companionPlants.put('onions', new Set<String>{'lettuce', 'carrots', 'tomatoes'});
+
+        companionPlants.put('carrots', new Set<String>{'onions'});
+
+        companionPlants.put('tomatoes', new Set<String>{'onions'});
+
+        return companionPlants.get(plant1).contains(plant2);
+    }
