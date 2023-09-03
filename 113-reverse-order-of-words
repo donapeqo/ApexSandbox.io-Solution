@@ -2,7 +2,7 @@ public String reverseWordsInASentence(String sentence){
     //your flawless code here
 
     //Split the words by the spaces
-    if(sentence = null) return null;
+    if(sentence == null) return null;
     list<String> splitSentences = sentence.split(' ');
 
     Integer n = splitSentences.size();
