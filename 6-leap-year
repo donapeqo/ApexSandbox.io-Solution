@@ -4,7 +4,7 @@ public Boolean isLeapYear(Integer year) {
         return false;
     } else if(Math.mod(year,400) != 0){
         return false;
-    } else if(Math.mod(year,4) != 0){
+    } else if(Math.mod(year,4) == 0){
         return false;
     } else {
         return true;
