@@ -1,0 +1,4 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    //code here
+    return plant1 == 'lettuce' && (plant2 == 'cucumber' )
+}
