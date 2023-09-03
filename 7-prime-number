@@ -4,6 +4,8 @@ public Boolean isPrime(Integer num) {
         if(Math.mod(num,num[i]!= 0)){
             return true;
             break
+        } else {
+            return false;
         }
     }
 }
