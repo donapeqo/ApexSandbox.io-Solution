@@ -3,7 +3,7 @@ public static Integer arraySum(List<Integer> numbers) {
     
 
         Integer total = 0;
-        for(Integer i = 0; i = numbers.size()-1; i++ ){
+        for(Integer i = 0; i <= numbers.size()-1; i++ ){
 
             total = numbers[i] + total;
 
