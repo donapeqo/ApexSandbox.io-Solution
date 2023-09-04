@@ -1,0 +1,16 @@
+public static Integer findLargest(List<Integer> nums) {
+	//code here 
+    Integer maxNum;
+    for(Integer i = 0; i>= nums.size(); i++){
+        if(i>0 && nums[i] > nums[i-1]){
+            maxNum = nums[i];
+        }else if(i=0){
+            maxNum = nums[i];
+
+        } else{
+            maxNum;
+        }
+    }
+
+    return maxNum;
+}
