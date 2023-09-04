@@ -2,13 +2,13 @@ public List<Integer> evenNumbers(Integer n) {
     //code here
     List<Integer> evenNum = new List<Integer>();
     Integer eve;
-    for(Integer i = 2; i <= n; i++){
+    for(Integer i = 1; i <= n; i++){
 
         eve = 2*i;
 
         evenNum.add(eve);
         
     }
-
+    system.debug(evenNum);
     return evenNum;
 }
