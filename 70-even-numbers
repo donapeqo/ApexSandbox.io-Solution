@@ -1,12 +1,12 @@
 public List<Integer> evenNumbers(Integer n) {
     //code here
     List<Integer> evenNum = new List<Integer>();
-    Integer enum = 1;
+    Integer eve;
     for(Integer i = 2; i <= n; i++){
 
-        enum = 2*i;
+        eve = 2*i;
 
-        evenNum.add(enum);
+        evenNum.add(eve);
         
     }
 
