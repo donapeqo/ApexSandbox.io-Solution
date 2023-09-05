@@ -1,11 +1,18 @@
 public List<Integer> fibonacciSeries(Integer n) {
     //code here
-    List<Integer> fiboNum =new List<Integer> {1};
-
+    List<Integer> fiboNum;
+    if(n = 1){
+        fiboNum = new List<Integer>{1};
+    } else if(n = 2){
+        fiboNum = new List<Integer>{1,1};
+    }
+    else{
     for(Integer i = 2; i <= n; i++){
         Integer num = fiboNum[i-1] + fiboNum[i-2];
         fiboNum.add(num);
     }
     return fiboNum;
+
+    }
 
 }
