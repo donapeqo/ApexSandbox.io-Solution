@@ -4,12 +4,8 @@ public List<Integer> fibonacciSeries(Integer n) {
     if(n == 1){
         fiboNum = new List<Integer>{1};
         return fiboNum;
-    } else if(n == 2){
-        fiboNum = new List<Integer>{1,1};
-        return fiboNum;
-    }
-    else{
-        fiboNum = new List<Integer>{1,1};
+    } 
+    fiboNum = new List<Integer>{1,1};
     for(Integer i = 2; i < n; i++){
         
         Integer num = fiboNum[i-1] + fiboNum[i-2];
@@ -17,6 +13,6 @@ public List<Integer> fibonacciSeries(Integer n) {
     }
     return fiboNum;
 
-    }
+    
 
 }
