@@ -3,8 +3,10 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> fiboNum;
     if(n == 1){
         fiboNum = new List<Integer>{1};
+        return fiboNum;
     } else if(n == 2){
         fiboNum = new List<Integer>{1,1};
+        return fiboNum;
     }
     else{
         fiboNum = new List<Integer>{1,1};
