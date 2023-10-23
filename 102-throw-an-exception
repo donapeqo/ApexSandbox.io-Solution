@@ -1,0 +1,22 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{
+    // code here 
+
+    List<Account> acc = new List<Account> (); 
+
+
+    if (!acc.isEmpty()){
+        for(Integer i = 0; i < acc.size ; i++){
+            if(acc.BillingCity = null){
+                AccountException
+            }
+        }
+    }else(){
+        return acc;
+    }
+    }
+    
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception {}
