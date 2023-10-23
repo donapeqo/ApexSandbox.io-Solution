@@ -2,7 +2,7 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
 {
     // code here
     List<String> result = new List<String>();
-    for(Integer = 1; i < fields.size(); i++){
+    for(Integer i = 1; i < fields.size(); i++){
         String fieldValue = (String)SObject.get(Schema.Account.fields[i]);
         result.add(fieldValue);
     }
