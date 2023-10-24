@@ -1,6 +1,6 @@
 public void validateInsert(List<Opportunity> opportunities){
     //code here
-    for(Opportunity oppx : opportunities){
+    for(Opportunity oppx:opportunities){
         if(oppx.StageName == 'Closed Won' && oppx.Description = null){
             Trigger.new[0].addError('Description should not be empty for Closed Won opportunity.');
         }
