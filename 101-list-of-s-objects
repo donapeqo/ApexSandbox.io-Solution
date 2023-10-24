@@ -5,7 +5,7 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 
     List<sObject> accAndCon = new List<sObject>();
 
-    if(accounts != null && contacts != null){
+    if(accounts.size != 0 && contacts.size != 0){
     accAndCon.addAll(accounts);
     accAndCon.addAll(contacts);
 
